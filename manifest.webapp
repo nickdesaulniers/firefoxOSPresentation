@@ -1,0 +1,14 @@
+{
+  "name": "Firefox OS Presentation",
+  "version": "0.1",
+  "description": "A presentation on Firefox OS",
+  "developer": {
+    "name": "Nick Desaulniers",
+    "url": "https://nickdesaulniers.github.io"
+  },
+  "icons": {
+    "60": "/60.png",
+    "128": "/128.png"
+  },
+  "fullscreen": true
+}
