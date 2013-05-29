@@ -7,9 +7,9 @@
     "url": "https://nickdesaulniers.github.io"
   },
   "icons": {
-    "60": "firefoxOSPresentation/60.png",
-    "128": "firefoxOSPresentation/128.png"
+    "60": "/firefoxOSPresentation/60.png",
+    "128": "/firefoxOSPresentation/128.png"
   },
   "fullscreen": true,
-  "launch_path": "/firefoxOSPresentation/"
+  "launch_path": "/firefoxOSPresentation/index.html"
 }
