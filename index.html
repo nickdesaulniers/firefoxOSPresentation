@@ -16,7 +16,7 @@
       <div class="center"><img src="ffos.png"/></div>
       <h2 class="center">Nick Desaulniers</h2>
     </div>
-    <div class="step slide" data-x="0" data-y="800">
+    <div class="step slide" data-x="0" data-y="2000">
       <h1>Nick Desaulniers</h1>
       <ul>
         <li>Software Engineer</li>
@@ -27,7 +27,7 @@
       </ul>
       <div class="center"><img src="nick.png"/></div>
     </div>
-    <div class="step slide" data-x="1200" data-y="0">
+    <div class="step slide" data-x="2000" data-y="0">
       <h1>What is Firefox OS?</h1>
       <p>
         Firefox OS is a free open source operating system for mobile devices
@@ -35,14 +35,14 @@
         manufacturers, and volunteers.
       </p>
     </div>
-    <div class="step slide" data-x="1200" data-y="800">
+    <div class="step slide" data-x="2000" data-y="2000">
       <h1>What is Firefox OS?</h1>
       <p>
         Firefox OS looks to be there for the next two billion people connecting
         to the web, through low cost mobile devices.
       </p>
     </div>
-    <div class="step slide" data-x="2400" data-y="0">
+    <div class="step slide" data-x="4000" data-y="0">
       <h1>What is Firefox OS Made Of?</h1>
       <div class="black-border center">
         <a class="dark-orange-bg" href="https://github.com/mozilla-b2g/gaia" target="_blank">Gaia</a>
@@ -50,7 +50,7 @@
         <a class="dark-blue-bg" href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Platform/Gonk" target="_blank">Gonk</a>
       </div>
     </div>
-    <div class="step slide" data-x="3600" data-y="0">
+    <div class="step slide" data-x="6000" data-y="0">
       <h1>What does it take to make an app?</h1>
       <ol class="rounded-list">
         <li>Decide on a packaging model.</li>
@@ -58,7 +58,7 @@
         <li>Serve manifest with right MIME type.</li>
       </ol>
     </div>
-    <div class="step slide" data-x="4800" data-y="0">
+    <div class="step slide" data-x="8000" data-y="0">
       <h1>Packaging Models</h1>
       <ul>
         <li>Hosted</li>
@@ -72,14 +72,14 @@
         </li>
       </ul>
     </div>
-    <div class="step slide" data-x="4800" data-y="800">
+    <div class="step slide" data-x="8000" data-y="2000">
       <h1>Packaging Models</h1>
       <p>
         The choice of packaging model comes down to need for Device APIs and
         hosting of assets.
       </p>
     </div>
-    <div class="step slide" data-x="6000" data-y="0">
+    <div class="step slide" data-x="10000" data-y="0">
       <h1>Packaged vs Hosted</h1>
       <p>
         Assets of packaged apps are zipped.
@@ -87,21 +87,21 @@
         Packaging an app can also be done to avoid hosting.
       </p>
     </div>
-    <div class="step slide" data-x="7200" data-y="0">
+    <div class="step slide" data-x="12000" data-y="0">
       <h1>Privileged (Packaged)</h1>
       <q>
         &quot;I would like to use a privileged device API.&quot;
         Subject to <a href="https://developer.mozilla.org/en-US/docs/Security/CSP/Introducing_Content_Security_Policy" target="_blank">CSP</a>.
       </q>
     </div>
-    <div class="step slide" data-x="8400" data-y="0">
+    <div class="step slide" data-x="14000" data-y="0">
       <h1>Web (Packaged)</h1>
       <q>
         &quot;I'm not interested in device APIs, but I would prefer to avoid
         hosting.&quot;
       </q>
     </div>
-    <div class="step slide" data-x="9600" data-y="0">
+    <div class="step slide" data-x="16000" data-y="0">
       <h1>Hosted</h1>
       <q>
         &quot;I'm not interested in device APIs, and I&#39;m cool with hosting
@@ -112,26 +112,26 @@
         web apps).
       </p>
     </div>
-    <div class="step slide" data-x="10800" data-y="0">
+    <div class="step slide" data-x="18000" data-y="0">
       <h1>Certified (Packaged)</h1>
       <p>
         Mozilla and carriers only.  Typically because APIs are sensitive
         or unstable.
       </p>
     </div>
-    <div class="step slide" data-x="10800" data-y="800">
+    <div class="step slide" data-x="18000" data-y="2000">
       <h1>Permissions</h1>
       <a href="https://developer.mozilla.org/en-US/docs/Web/Apps/App_permissions" target="_blank">
         Permissions Matrix (MDN)
       </a>
     </div>
-    <div class="step slide" data-x="10800" data-y="1600">
+    <div class="step slide" data-x="18000" data-y="4000">
       <h1>One App Per Origin</h1>
       <p>
         Apps are differentiated by their origin. Origin = protocol + subdomain + domain + port
       </p>
     </div>
-    <div class="step slide" data-x="12000" data-y="0">
+    <div class="step slide" data-x="20000" data-y="0">
       <h1>Manifest</h1>
       <p>
         JSON encoded file that tells the OS about your app.
@@ -141,28 +141,28 @@
       </a>
       <pre id="manifest_example"></pre>
     </div>
-    <div class="step slide" data-x="13200" data-y="0">
+    <div class="step slide" data-x="22000" data-y="0">
       <h1>Manifest MIME Type</h1>
       <p>
         Manifest must be served with MIME type&#58;
         <pre>application/x-web-app-manifest+json</pre>
       </p>
     </div>
-    <div class="step slide" data-x="14400" data-y="0">
+    <div class="step slide" data-x="24000" data-y="0">
       <h1>Manifest is JSON</h1>
       <p>
         Make sure your manifest is valid JSON!  I recommend always double
         checking with <a href="http://jsonlint.com/" target="_blank">JSONLint</a>.
       </p>
     </div>
-    <div class="step slide" data-x="14400" data-y="800">
+    <div class="step slide" data-x="24000" data-y="2000">
       <h1>Github Pages</h1>
       <p>
         Github will serve your manifest with the right mime type, so you can
         host an app from Github!
       </p>
     </div>
-    <div class="step slide" data-x="15600" data-y="0">
+    <div class="step slide" data-x="26000" data-y="0">
       <h1>Dev Tools</h1>
       <ul>
         <li><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">Firefox Dev Tools</a></li>
@@ -171,7 +171,7 @@
         <li><a href="https://developers.google.com/chrome-developer-tools/" target="_blank">Other Browser&#39;s Dev Tools</a></li>
       </ul>
     </div>
-    <div class="step slide" data-x="16800" data-y="0">
+    <div class="step slide" data-x="28000" data-y="0">
       <h1>Reference Docs</h1>
       <ul>
         <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS" target="_blank">Mozilla Developer Network</a></li>
@@ -180,7 +180,7 @@
         <li><a href="https://hacks.mozilla.org/" target="_blank">Mozilla Hacks Blog</a></li>
       </ul>
     </div>
-    <div class="step slide" data-x="18000" data-y="0">
+    <div class="step slide" data-x="30000" data-y="0">
       <h1>Monetize Your App</h1>
       <a href="https://marketplace.firefox.com/" target="_blank">Firefox Marketplace</a>
       <ul>
@@ -189,7 +189,7 @@
         <li>Carrier Billing</li>
       </ul>
     </div>
-    <div class="step slide" data-x="19200" data-y="0">
+    <div class="step slide" data-x="32000" data-y="0">
       <h1>Paid Apps</h1>
       <p>
         Apps receive a receipt when installed.  Mozilla provides verification
@@ -201,7 +201,7 @@
         <li><a href="https://marketplace.firefox.com/developers/test/receipts/" target="_blank">Test Receipts</a></li>
       </ul>
     </div>
-    <div class="step slide" data-x="20400" data-y="0">
+    <div class="step slide" data-x="34000" data-y="0">
       <h1>In App Payments</h1>
       <ol>
         <li>Client Requests JWT from server</li>
@@ -214,7 +214,7 @@
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Publishing/In-app_payments" target="_blank">Docs</a></li>
       </ul>
     </div>
-    <div class="step slide" data-x="21600" data-y="0">
+    <div class="step slide" data-x="36000" data-y="0">
       <h1>Authenticate with Persona</h1>
       <p>
         Mozilla Persona is a cross-browser login system for the Web that's easy
@@ -225,7 +225,7 @@
         <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Persona/Quick_Setup" target="_blank">Quick Setup</a></li>
       </ul>
     </div>
-    <div class="step slide" data-x="22800" data-y="0">
+    <div class="step slide" data-x="38000" data-y="0">
       <h1>Web Activities</h1>
       <p>
         Useful for inter-app communication.  Listen for or invoke different
@@ -233,7 +233,7 @@
       </p>
       <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Web_Activities" target="_blank">Docs (MDN)</a>
     </div>
-    <div class="step slide" data-x="24000" data-y="0">
+    <div class="step slide" data-x="40000" data-y="0">
       <h1>Personal Observations</h1>
       <ul>
         <li>Don&#39;t assume connectivity.</li>
@@ -244,10 +244,10 @@
         <li>Localize all strings!</li>
       </ul>
     </div>
-    <div class="step slide" data-x="25200" data-y="0">
+    <div class="step slide" data-x="42000" data-y="0">
       <h1>Questions?</h1>
     </div>
-    <div class="step slide" data-x="26400" data-y="0">
+    <div class="step slide" data-x="44000" data-y="0">
       <h1>Thanks!</h1>
       <p>
         Let me know what you thought about this talk.
