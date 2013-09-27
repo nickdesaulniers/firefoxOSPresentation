@@ -1,267 +1,227 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="description" content="A presentation on Firefox OS" />
-  <meta name="author" content="Nick Desaulniers" />
-  <title>Firefox OS</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="fallback-message"><p>Missing browser support.</p></div>
-  <div id="impress" data-perspective="0">
-    <div id="initial" class="step slide" data-x="0" data-y="0">
-      <h1 class="center">Firefox OS</h1>
-      <h2 class="center">First Class Mobile Web</h2>
-      <div class="center"><img src="ffos.png"/></div>
-      <h2 class="center">Nick Desaulniers</h2>
-    </div>
-    <div class="step slide" data-x="0" data-y="2000">
-      <h1>Nick Desaulniers</h1>
-      <ul>
-        <li>Software Engineer</li>
-        <li>Mozilla</li>
-        <li>3rd Party App Support</li>
-        <li>Simulator Core</li>
-        <li>Rust Contributor</li>
-      </ul>
-      <div class="center"><img src="nick.png"/></div>
-    </div>
-    <div class="step slide" data-x="2000" data-y="0">
-      <h1>What is Firefox OS?</h1>
-      <p>
-        Firefox OS is a free open source operating system for mobile devices
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Firefox OS</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+<div class="reveal">
+<div class="slides">
+    <section>
+        <h1>Firefox OS</h1>
+<p>First Class Mobile Web</p>
+<p>Nick Desaulniers</p>
+<img src="https://raw.github.com/nickdesaulniers/firefoxOSPresentation/master/ffos.png">
+    </section>
+    <section>
+        <h2>Nick Desaulniers</h2>
+<p>Software Engineer @ Mozilla</p>
+<p>3rd Party App Support</p>
+<p>Simulator Core</p>
+<p>Rust Contributor</p>
+<img src="https://raw.github.com/nickdesaulniers/firefoxOSPresentation/master/nick.png">
+    </section>
+    <section>
+        <h2>What is Firefox OS?</h2>
+<p>Firefox OS is a free open source operating system for mobile devices
         being developed by Mozilla, telecom operators, handset and chipset
-        manufacturers, and volunteers.
-      </p>
-    </div>
-    <div class="step slide" data-x="2000" data-y="2000">
-      <h1>What is Firefox OS?</h1>
-      <p>
-        Firefox OS looks to be there for the next two billion people connecting
+        manufacturers, and volunteers. <br>
+    </p>
+<p>
+    <br>
+    </p>
+<p>Firefox OS looks to be there for the next two billion people connecting
         to the web, through low cost mobile devices.
       </p>
-    </div>
-    <div class="step slide" data-x="4000" data-y="0">
-      <h1>What is Firefox OS Made Of?</h1>
-      <div class="black-border center">
-        <a class="dark-orange-bg" href="https://github.com/mozilla-b2g/gaia" target="_blank">Gaia</a>
-        <a class="light-orange-bg" href="http://hg.mozilla.org/mozilla-central/" target="_blank">Gecko</a>
-        <a class="dark-blue-bg" href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Platform/Gonk" target="_blank">Gonk</a>
-      </div>
-    </div>
-    <div class="step slide" data-x="6000" data-y="0">
-      <h1>What does it take to make an app?</h1>
-      <ol class="rounded-list">
-        <li>Decide on a packaging model.</li>
-        <li>Create a manifest file.</li>
-        <li>Serve manifest with right MIME type.</li>
-      </ol>
-    </div>
-    <div class="step slide" data-x="8000" data-y="0">
-      <h1>Packaging Models</h1>
-      <ul>
-        <li>Hosted</li>
-        <li>Packaged</li>
-        <li>
-          <ul>
-            <li>Web</li>
-            <li>Privileged</li>
-            <li>Certified</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <div class="step slide" data-x="8000" data-y="2000">
-      <h1>Packaging Models</h1>
-      <p>
-        The choice of packaging model comes down to need for Device APIs and
+</section>
+<section>
+    <h2>What is Firefox OS made of?</h2>
+<p>Gaia</p>
+<p>Gecko</p>
+<p>Gonk<br>
+</p>
+</section>
+<section>
+    <h2>What does it take to make an app?</h2>
+<ol>
+<li>Decide on a packaging model.</li>
+<li>Create a manifest file.</li>
+<li>Serve manifest with right MIME type.</li>
+</ol>
+</section>
+<section>
+    <h2>Packaging Models</h2>
+<ul>
+<li>Hosted</li>
+<li>Packaged</li>
+<ul>
+<li>Web</li>
+<li>Privileged</li>
+<li>Certified</li>
+</ul>
+</ul>
+<p>
+    <br>
+    </p>
+<p>The choice of packaging model comes down to need for Device APIs and
         hosting of assets.
       </p>
-    </div>
-    <div class="step slide" data-x="10000" data-y="0">
-      <h1>Packaged vs Hosted</h1>
-      <p>
-        Assets of packaged apps are zipped.
-        Device APIs require packaging for security and review.
-        Packaging an app can also be done to avoid hosting.
+</section>
+<section>
+    <h2>Packaged vs Hosted</h2>
+<p>Assets of packaged apps are zipped. Device APIs require packaging for security and review. Packaging an app can also be done to avoid hosting. <br>
+</p>
+</section>
+<section>
+    <h2>Privileged (Packaged)</h2>
+<p>"I would like to use a privileged device API."
+        Subject to <a href="https://developer.mozilla.org/en-US/docs/Security/CSP/Introducing_Content_Security_Policy" target="_blank">CSP</a>.</p>
+</section>
+<section>
+    <h2>Web (Packaged)</h2>
+<p>
+    <br>
+    </p>
+      <q>
+        "I'm not interested in device APIs, but I would prefer to avoid
+        hosting."
+      </q>
+    </section>
+    <section>
+        <h2>Hosted</h2>
+<p>"I'm not interested in device APIs, and I'm cool with hosting
+        assets somewhere."
+      
       </p>
-    </div>
-    <div class="step slide" data-x="12000" data-y="0">
-      <h1>Privileged (Packaged)</h1>
-      <q>
-        &quot;I would like to use a privileged device API.&quot;
-        Subject to <a href="https://developer.mozilla.org/en-US/docs/Security/CSP/Introducing_Content_Security_Policy" target="_blank">CSP</a>.
-      </q>
-    </div>
-    <div class="step slide" data-x="14000" data-y="0">
-      <h1>Web (Packaged)</h1>
-      <q>
-        &quot;I'm not interested in device APIs, but I would prefer to avoid
-        hosting.&quot;
-      </q>
-    </div>
-    <div class="step slide" data-x="16000" data-y="0">
-      <h1>Hosted</h1>
-      <q>
-        &quot;I'm not interested in device APIs, and I&#39;m cool with hosting
-        assets somewhere.&quot;
-      </q>
-      <p>
+<p>
         Most apps will probably fall under this category (ie. existing mobile
         web apps).
       </p>
-    </div>
-    <div class="step slide" data-x="18000" data-y="0">
-      <h1>Certified (Packaged)</h1>
-      <p>
+    </section>
+    <section>
+        <h2>Certified (Packaged)</h2>
+<p>
         Mozilla and carriers only.  Typically because APIs are sensitive
         or unstable.
       </p>
-    </div>
-    <div class="step slide" data-x="18000" data-y="2000">
-      <h1>Permissions</h1>
-      <a href="https://developer.mozilla.org/en-US/docs/Web/Apps/App_permissions" target="_blank">
-        Permissions Matrix (MDN)
+    </section>
+    <section>
+        <h2>Permissions<br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/Apps/App_permissions" target="_blank">Permissions Matrix (MDN)
       </a>
-    </div>
-    <div class="step slide" data-x="18000" data-y="4000">
-      <h1>One App Per Origin</h1>
-      <p>
-        Apps are differentiated by their origin. Origin = protocol + subdomain + domain + port
+            <br>
+</h2>
+        </section>
+        <section>
+            <h2>One App Per Origin</h2>
+<p>Apps are differentiated by their origin. Origin = protocol + subdomain + domain + port
       </p>
-    </div>
-    <div class="step slide" data-x="20000" data-y="0">
-      <h1>Manifest</h1>
-      <p>
+        </section>
+        <section>
+            <h2>Manifest</h2>
+<p>
         JSON encoded file that tells the OS about your app.
       </p>
       <a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Manifest" target="_blank">
         App Manifest (MDN)
       </a>
-      <pre id="manifest_example"></pre>
-    </div>
-    <div class="step slide" data-x="22000" data-y="0">
-      <h1>Manifest MIME Type</h1>
-      <p>
-        Manifest must be served with MIME type&#58;
-        <pre>application/x-web-app-manifest+json</pre>
-      </p>
-    </div>
-    <div class="step slide" data-x="24000" data-y="0">
-      <h1>Manifest is JSON</h1>
+      <pre id="manifest_example">{
+  "name": "Firefox OS Presentation",
+  "version": "0.1",
+  "description": "My Presentation",
+  "developer": {
+    "name": "Nick Desaulniers",
+    "url": "https://nickdesaulniers.github.io"
+  },
+  "icons": {
+    "60": "/60.png",
+    "128": "/128.png"
+  },
+  "fullscreen": true
+}</pre>
+<br>
+        </section>
+        <section>
+<h2>Manifest MIME Type</h2>
+<p>
+        Manifest must be served with MIME type:
+        </p>
+<pre>application/x-web-app-manifest+json</pre>
+<br></section><section><h2>Manifest is JSON</h2>
       <p>
         Make sure your manifest is valid JSON!  I recommend always double
         checking with <a href="http://jsonlint.com/" target="_blank">JSONLint</a>.
-      </p>
-    </div>
-    <div class="step slide" data-x="24000" data-y="2000">
-      <h1>Github Pages</h1>
-      <p>
-        Github will serve your manifest with the right mime type, so you can
+      </p></section><section><h2>Github Pages</h2><p>Github will serve your manifest with the right mime type, so you can
         host an app from Github!
-      </p>
-    </div>
-    <div class="step slide" data-x="26000" data-y="0">
-      <h1>Dev Tools</h1>
-      <ul>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">Firefox Dev Tools</a></li>
-        <li><a href="https://addons.mozilla.org/en-US/firefox/collections/mozilla/webdeveloper/" target="_blank">Add Ons</a></li>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Tools/Firefox_OS_Simulator" target="_blank">Simulator</a></li>
-        <li><a href="https://developers.google.com/chrome-developer-tools/" target="_blank">Other Browser&#39;s Dev Tools</a></li>
-      </ul>
-    </div>
-    <div class="step slide" data-x="28000" data-y="0">
-      <h1>Reference Docs</h1>
-      <ul>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS" target="_blank">Mozilla Developer Network</a></li>
-        <li><a href="https://marketplace.firefox.com/developers/" target="_blank">Firefox Marketplace Developer Hub</a></li>
-        <li><a href="https://wiki.mozilla.org/Main_Page" target="_blank">Mozilla Wiki</a></li>
-        <li><a href="https://hacks.mozilla.org/" target="_blank">Mozilla Hacks Blog</a></li>
-      </ul>
-    </div>
-    <div class="step slide" data-x="30000" data-y="0">
-      <h1>Monetize Your App</h1>
-      <a href="https://marketplace.firefox.com/" target="_blank">Firefox Marketplace</a>
-      <ul>
-        <li>Paid Apps</li>
-        <li>In App Purchases</li>
-        <li>Carrier Billing</li>
-      </ul>
-    </div>
-    <div class="step slide" data-x="32000" data-y="0">
-      <h1>Paid Apps</h1>
-      <p>
+      </p></section><section><h2>Dev Tools</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Tools" target="_blank">Firefox Dev Tools</a></li><li><a href="https://addons.mozilla.org/en-US/firefox/collections/mozilla/webdeveloper/" target="_blank">Add Ons</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Tools/Firefox_OS_Simulator" target="_blank">Simulator</a></li><li><a href="https://developers.google.com/chrome-developer-tools/" target="_blank">Other Browser's Dev Tools</a></li></ul></section><section><h2>Reference Docs</h2><ul><li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS" target="_blank">Mozilla Developer Network</a></li><li><a href="https://marketplace.firefox.com/developers/" target="_blank">Firefox Marketplace Developer Hub</a></li><li><a href="https://wiki.mozilla.org/Main_Page" target="_blank">Mozilla Wiki</a></li><li><a href="https://hacks.mozilla.org/" target="_blank">Mozilla Hacks Blog</a></li></ul></section><section><h2>Monetize Your App</h2><ul><li><a href="https://marketplace.firefox.com/" target="_blank">Firefox Marketplace</a>
+      </li><li>Paid Apps</li><li>In App Purchases</li><li>Carrier Billing</li></ul></section><section><h2>Paid Apps</h2><p>
         Apps receive a receipt when installed.  Mozilla provides verification
         service.
       </p>
-      <ul>
-        <li><a href="https://github.com/mozilla/receiptverifier" target="_blank">Receipt Verifier Library</a></li>
-        <li><a href="https://wiki.mozilla.org/Apps/WebApplicationReceipt" target="_blank">Docs</a></li>
-        <li><a href="https://marketplace.firefox.com/developers/test/receipts/" target="_blank">Test Receipts</a></li>
-      </ul>
-    </div>
-    <div class="step slide" data-x="34000" data-y="0">
-      <h1>In App Payments</h1>
-      <ol>
-        <li>Client Requests JWT from server</li>
-        <li><pre>navigator.mozPay(jwt);</pre></li>
-        <li>Mozilla Service contacts server</li>
-        <li>Server transfers content</li>
-      </ol>
-      <ul>
-        <li><a href="https://raw.github.com/nickdesaulniers/emcc_test/master/payments/server/public/images/payment_flow.png" target="_blank">Illustration</a></li>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Publishing/In-app_payments" target="_blank">Docs</a></li>
-      </ul>
-    </div>
-    <div class="step slide" data-x="36000" data-y="0">
-      <h1>Authenticate with Persona</h1>
-      <p>
+      <ul><li><a href="https://github.com/mozilla/receiptverifier" target="_blank">Receipt Verifier Library</a></li><li><a href="https://wiki.mozilla.org/Apps/WebApplicationReceipt" target="_blank">Docs</a></li><li><a href="https://marketplace.firefox.com/developers/test/receipts/" target="_blank">Test Receipts</a></li></ul></section><section><h2>In App Payments</h2><ol><li>Client Requests JWT from server</li><li><pre>navigator.mozPay(jwt);</pre></li><li>Mozilla Service contacts server</li><li>Server transfers content</li></ol><p><br></p><ul><li><a href="https://raw.github.com/nickdesaulniers/emcc_test/master/payments/server/public/images/payment_flow.png" target="_blank">Illustration</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Web/Apps/Publishing/In-app_payments" target="_blank">Docs</a></li></ul></section><section><h2>Authenticate with Persona</h2><p>
         Mozilla Persona is a cross-browser login system for the Web that's easy
         to use and easy to deploy.  Not required for Firefox OS.
       </p>
-      <ul>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Persona" target="_blank">Docs (MDN)</a></li>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Persona/Quick_Setup" target="_blank">Quick Setup</a></li>
-      </ul>
-    </div>
-    <div class="step slide" data-x="38000" data-y="0">
-      <h1>Web Activities</h1>
-      <p>
+      <ul><li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Persona" target="_blank">Docs (MDN)</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Persona/Quick_Setup" target="_blank">Quick Setup</a></li></ul></section><section><h2>Web Activities</h2><p>
         Useful for inter-app communication.  Listen for or invoke different
         activities.
       </p>
-      <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Web_Activities" target="_blank">Docs (MDN)</a>
-    </div>
-    <div class="step slide" data-x="40000" data-y="0">
-      <h1>Personal Observations</h1>
-      <ul>
-        <li>Don&#39;t assume connectivity.</li>
-        <li>Bandwidth is not free.</li>
-        <li>No browser-chrome.</li>
-        <li>Small inputs hurt.</li>
-        <li>Target mobile first, then add content.</li>
-        <li>Localize all strings!</li>
-      </ul>
-    </div>
-    <div class="step slide" data-x="42000" data-y="0">
-      <h1>Questions?</h1>
-    </div>
-    <div class="step slide" data-x="44000" data-y="0">
-      <h1>Thanks!</h1>
-      <p>
+      <a href="https://developer.mozilla.org/en-US/docs/WebAPI/Web_Activities" target="_blank">Docs (MDN)</a></section><section><h2>Personal Observations</h2><ul><li>Don't assume connectivity.</li><li>Bandwidth is not free.</li><li>No browser-chrome.</li><li>Small inputs hurt.</li><li>Target mobile first, then add content.</li><li>Localize all strings!</li></ul></section><section><h2>Questions?<br></h2></section><section><h2>Thanks!</h2><p>
         Let me know what you thought about this talk.
       </p>
-      <ul>
-        <li><a href="https://twitter.com/lostoracle" target="_blank">@LostOracle</a></li>
-        <li><pre><a href="http://nickdesaulniers.github.io/" target="_blank">nickdesaulniers.github.io &lt;- Blog</a></pre></li>
-        <li><a href="http://nickdesaulniers.github.io/firefoxOSPresentation/" target="_blank">This Presentation</a></li>
-        <li><a href="https://github.com/nickdesaulniers/firefoxOSPresentation" target="_blank">Use the Source, Luke</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="hint"><p>Use the spacebar or arrow keys to navigate.</p></div>
-  <script src="impress.js"></script>
-  <script src="script.js"></script>
-</body>
+      <ul><li><a href="https://twitter.com/lostoracle" target="_blank">@LostOracle</a></li><li><a href="http://nickdesaulniers.github.io">http://nickdesaulniers.github.io</a> (my blog)<br></li></ul></section></div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
 </html>
